@@ -1,0 +1,21 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    align-items: center;
+    text-align: center;
+}
+
+.descricao{
+    text-indent: 800px;
+}
+.rodape {
+    text
+    font-size: 20px;
+}
+
