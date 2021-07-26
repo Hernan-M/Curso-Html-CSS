@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Source+Sans+Pro:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --color-rocket: #7159C1;
+    --color-text: #f0f8ff;
+}
+
+a{
+    color: black;
+}
+
+#titulo{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+.grow > a:hover{
+    color: var(--color-text);
+    transition: ease-in 0.3s;
+}
+
+body{
+    background-color: #7159c1f8;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    padding: 25px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.img-perfil img{
+    text-align: center;
+    margin: 25px;
+    margin-bottom: 0;
+    filter: drop-shadow(4px 4px 8px rgba(54, 54, 54, 0.788));
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    width: 180px;
+}
+
+.nome-empresa{
+    font-size: 25px;
+    color: var(--color-text);
+}
+
+.palavras{
+    margin-left: 31vw;
+    height: 300px;
+    width: 550px;
+    text-align: justify
+}
+
+.texto{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.lista{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px;
+    text-align: justify;
+}
+
+ul{
+    list-style: none;
+}
+
+.rodape{
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+}
+
+.grow{
+    font-size: 30px;
+}
+
+/*cards*/
+
+.cards{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.cards .card{
+    margin-top: 80px;
+    margin-left: 75px;
+    background-color: var(--color-text);
+    width: 280px;
+    height: 320px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover{
+    transform: translateY(-15px)
+}
+
+.card .card-img img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.cards .card .card-info{
+    text-align: justify;
+    font-size: 15px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+h4{
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+/*overlays*/
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay .modal{
+    background-color: white;
+    width: 80vw;
+    height: 85vh;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay .modal .modal-close{
+    position: absolute;
+    right: 18px;
+    top: 6px;
+    cursor: pointer;
+}
+
+/*botoezinhos*/
+
+/*maximizar*/
+.maximize{
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.maximize-active{
+    height: 100vh !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.hidden-button-maximize{
+    opacity: 0;
+    visibility: hidden;
+}
+/*minimizar*/
+.modal .minimize{
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.minimize .minimize-button-activate{
+    opacity: 1;
+    visibility: visible;
+}
+
+.minimize-active{
+    transition: all 0.2s ease-out;
+}
+
+/*content*/
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+}
